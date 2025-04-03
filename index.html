@@ -4,8 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Belajar Tailwind</title>
+    <link href="./style/output.css" rel="stylesheet"></link>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
-<body>
-    
+<body class="px-16 font-poppins">
+
+    <header class="flex justify-between items-center py-6 border-b border-gray-200">
+        <div class="w-[150px]">
+            <img src="./image/logo.png" alt="" class="w-full h-full">
+        </div>
+
+        <ul class="relative flex items-center gap-6">
+            <li class="relative py-4 group">
+                <a class="group-hover:text-accent group-hover:font-bold" href="">Home</a>
+                <span class="absolute left-0 bottom-0 w-0 h-1 bg-accent group-hover:w-full transition-all duration-200"></span>
+            </li>
+            <li class="relative py-4 group">
+                <a class="group-hover:text-accent group-hover:font-bold" href="">Shop</a>
+                <span class="absolute left-0 bottom-0 w-0 h-1 bg-accent group-hover:w-full transition-all duration-200"></span>
+            </li>
+            <li class="relative py-4 group">
+                <a class="group-hover:text-accent group-hover:font-bold" href="">Plant Care</a>
+                <span class="absolute left-0 bottom-0 w-0 h-1 bg-accent group-hover:w-full transition-all duration-200"></span>
+            </li>
+            <li class="relative py-4 group">
+                <a class="group-hover:text-accent group-hover:font-bold" href="">Blogs</a>
+                <span class="absolute left-0 bottom-0 w-0 h-1 bg-accent group-hover:w-full transition-all duration-200"></span>
+            </li>
+        </ul>
+
+        <div class="flex gap-6 items-center">
+            <span class="material-symbols-outlined">
+                search
+                </span>
+            <span class="material-symbols-outlined">
+                    shopping_cart
+                </span>
+
+            <button class="flex gap-2 items-center bg-accent py-2 px-4 text-white rounded-md">
+                <span class="material-symbols-outlined">
+                    login
+                    </span>
+                Login
+            </button>
+        </div>
+
+    </header>
+
 </body>
 </html>
